@@ -110,6 +110,10 @@
 %\usepackage[LGRgreek]
 %\setcitestyle{numbers,comma,sort&compress,open={[},close={]}}
 
+\usepackage[textwidth=4cm]{todonotes}
+\reversemarginpar					% SB: so todo notes appear in left margin
+\setlength{\marginparwidth}{0cm} 	% SB: this might muck up other layout stuff so remove if anything looks squiffy
+
 \makeatletter
 \newcounter{reaction}
 %%% >> for article <<
@@ -214,6 +218,8 @@ $^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\listoftodos
 
 \input{Abstract.tex}
 \input{Intro.tex}
